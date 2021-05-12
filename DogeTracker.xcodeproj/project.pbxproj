@@ -13,6 +13,10 @@
 		48CA45BC26463E3E00199AD9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48CA45BA26463E3E00199AD9 /* Main.storyboard */; };
 		48CA45BE26463E4100199AD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48CA45BD26463E4100199AD9 /* Assets.xcassets */; };
 		48CA45C126463E4100199AD9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48CA45BF26463E4100199AD9 /* LaunchScreen.storyboard */; };
+		48CA45C92647087700199AD9 /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CA45C82647087600199AD9 /* APICaller.swift */; };
+		48CA45CB264708C200199AD9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CA45CA264708C200199AD9 /* Constants.swift */; };
+		48CA45CD26484DAC00199AD9 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CA45CC26484DAC00199AD9 /* Models.swift */; };
+		48CA45CF26485AEB00199AD9 /* DogeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CA45CE26485AEB00199AD9 /* DogeTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		48CA45BD26463E4100199AD9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		48CA45C026463E4100199AD9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		48CA45C226463E4100199AD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		48CA45C82647087600199AD9 /* APICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
+		48CA45CA264708C200199AD9 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		48CA45CC26484DAC00199AD9 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		48CA45CE26485AEB00199AD9 /* DogeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogeTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +66,15 @@
 			children = (
 				48CA45B426463E3E00199AD9 /* AppDelegate.swift */,
 				48CA45B626463E3E00199AD9 /* SceneDelegate.swift */,
+				48CA45CA264708C200199AD9 /* Constants.swift */,
+				48CA45C82647087600199AD9 /* APICaller.swift */,
 				48CA45B826463E3E00199AD9 /* ViewController.swift */,
 				48CA45BA26463E3E00199AD9 /* Main.storyboard */,
 				48CA45BD26463E4100199AD9 /* Assets.xcassets */,
 				48CA45BF26463E4100199AD9 /* LaunchScreen.storyboard */,
 				48CA45C226463E4100199AD9 /* Info.plist */,
+				48CA45CC26484DAC00199AD9 /* Models.swift */,
+				48CA45CE26485AEB00199AD9 /* DogeTableViewCell.swift */,
 			);
 			path = DogeTracker;
 			sourceTree = "<group>";
@@ -137,9 +149,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48CA45CB264708C200199AD9 /* Constants.swift in Sources */,
 				48CA45B926463E3E00199AD9 /* ViewController.swift in Sources */,
+				48CA45CF26485AEB00199AD9 /* DogeTableViewCell.swift in Sources */,
 				48CA45B526463E3E00199AD9 /* AppDelegate.swift in Sources */,
+				48CA45CD26484DAC00199AD9 /* Models.swift in Sources */,
 				48CA45B726463E3E00199AD9 /* SceneDelegate.swift in Sources */,
+				48CA45C92647087700199AD9 /* APICaller.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,7 +312,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.gmail-carlosecardonam1.DogeTracker";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -315,7 +331,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.gmail-carlosecardonam1.DogeTracker";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
